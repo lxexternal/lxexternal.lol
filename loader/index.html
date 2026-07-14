@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Automatyczne przekierowanie/pobieranie po 1 sekundzie (meta refresh) -->
+    <meta http-equiv="refresh" content="1; url=ADRES_DO_TWOJEGO_PLIKU_LOADERA">
+    <title>Pobieranie Loadera...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pobieranie rozpocznie się za chwilę...</h1>
+        <p>Jeśli pobieranie nie uruchomiło się automatycznie, <a href="ADRES_DO_TWOJEGO_PLIKU_LOADERA" id="download-link">kliknij tutaj</a>.</p>
+    </div>
 
+    <script>
+        // Zapasowy wyzwalacz pobierania przez JavaScript
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "ADRES_DO_TWOJEGO_PLIKU_LOADERA";
+            }, 500);
+        };
+    </script>
+</body>
+</html>
